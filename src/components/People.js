@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function People() {
+export default function People(props) {
   const classes = useStyles();
   
   return (
@@ -32,8 +32,8 @@ export default function People() {
           aria-controls="panel1a-content"
           id="panel1a-header"    
         > 
-          <Typography  className={classes.heading} type='h1' >Name</Typography>
-          <Typography fontSize={8} className={classes.secondaryHeading}>from homeworld</Typography>
+          <Typography  className={classes.heading} type='h1' >{props.name} </Typography>
+          <Typography fontSize={8} className={classes.secondaryHeading}> {props.specie}  from {props.homeworld}</Typography>
         </AccordionSummary>
         </a>
       </Accordion>
