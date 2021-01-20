@@ -24,15 +24,11 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar  position="static">
         <Toolbar >
-        
-        <Typography component="div" variant="h6" className={classes.title}>
-        <Box textAlign="center" m={1}>
-
-          People of Star Wars
-          </Box>
-          </Typography>
-     
-          
+            <Typography component="div" variant="h6" className={classes.title}>
+                <Box textAlign="center" m={1}>
+                    People of Star Wars
+                </Box>
+            </Typography>
         </Toolbar>
       </AppBar>
     </div>
