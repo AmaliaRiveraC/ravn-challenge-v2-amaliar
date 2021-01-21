@@ -1,43 +1,34 @@
 {
-  "name": "ravn-challange-v2-amaliar",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@apollo/client": "^3.3.7",
-    "@material-ui/core": "^4.11.2",
-    "@material-ui/icons": "^4.11.2",
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.3",
-    "@testing-library/user-event": "^12.6.0",
-    "gql": "^1.1.2",
-    "graphql": "^14.7.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
-  },
+  "name": "graphql-user-api",
+  "version": "1.0.0",
+  "description": "This is a graphql based API that resolves using a REST API. The purpose of this repo is to show how devs and organizations can start using graphql with the least effort possible and no re-writing their existing infrastructure.",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node --presets babel-preset-env -- src/server.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeynimu/graphql-user-api.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "Joe Ng'ethe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joeynimu/graphql-user-api/issues"
+  },
+  "homepage": "https://github.com/joeynimu/graphql-user-api#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "node-fetch": "^2.1.2",
+    "nodemon": "^2.0.7"
+  },
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
   }
 }
