@@ -12,7 +12,7 @@ import App from './App';
 const client = new ApolloClient({
   cache: new InMemoryCache(),
   link: new HttpLink({
-    uri: 'http://localhost:56695'
+    uri: 'https://ravn-challenge-v2-amaliar.herokuapp.com/'
   })
 })
 
