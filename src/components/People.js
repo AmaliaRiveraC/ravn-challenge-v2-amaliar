@@ -26,7 +26,6 @@ export default function People(props) {
   return (
     <div className={classes.root}> 
       <Accordion TransitionProps={{ unmountOnExit: true }} >
-        <a href="#">
         <AccordionSummary
           expandIcon={ <ExpandMoreIcon  />}
           aria-controls="panel1a-content"
@@ -35,7 +34,6 @@ export default function People(props) {
           <Typography  className={classes.heading} type='h1' >{props.name} </Typography>
           <Typography fontSize={8} className={classes.secondaryHeading}> {props.specie}  from {props.homeworld}</Typography>
         </AccordionSummary>
-        </a>
       </Accordion>
     </div>
   );
